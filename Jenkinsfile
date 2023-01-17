@@ -1,4 +1,5 @@
 @Library('Santu_SharedLibraries') _
+jenkinsForJava('https://github.com/abcdsantu/santu-appnew.git')
 
 
 pipeline {
@@ -6,7 +7,8 @@ pipeline {
     stages {
        stage('Testing') {
         steps {
-          jenkinsForJava('https://github.com/abcdsantu/santu-appnew.git')
+             welcomeJob("Santu!")
+          
           
         }
        }
